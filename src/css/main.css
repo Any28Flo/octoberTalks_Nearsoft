@@ -19,6 +19,18 @@ nav {
   background-color: #FF5300;
   color: white; }
 
+video {
+  min-width: 100%;
+  width: auto;
+  z-index: -100; }
+
+.margin-top {
+  margin-top: 5%; }
+
+
+.pading {
+  padding: 8%; }
+
 body {
   box-sizing: border-box;
   padding: 0;
@@ -61,6 +73,7 @@ div.seccionRedirect {
 .contenedorMapa {
   background-color: #1a1a1a;
   height: 30vh; }
+
 
 .icono i {
   color: #3d122a; }
