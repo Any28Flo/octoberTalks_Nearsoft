@@ -1,19 +1,19 @@
-
 nav {
   background: #FFF;
   box-shadow: none; }
   nav .logo {
     width: 25%;
     margin: 2%; }
-  nav .btn_agenda {
-    background: #FF5300;
-    margin: 2%; }
+
+.btn_agenda {
+  background: #FF5300;
+  margin: 2%; }
 
 .mas {
   color: #FF5300; }
 
 .titulo {
-  margin-top: 6%; }
+  margin-top: 10%; }
 
 body {
   box-sizing: border-box;
@@ -56,6 +56,5 @@ footer {
   height: 5vh;
   background-color: #1a1a1a;
   margin: 0; }
-
 
 /*# sourceMappingURL=main.css.map */
