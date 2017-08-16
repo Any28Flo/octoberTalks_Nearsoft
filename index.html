@@ -1,67 +1,98 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>October Talks - Nearsoft.</title>
-    <link rel="stylesheet" href="src/css/materialize.min.css">
-    <link rel="stylesheet" href="src/css/main.css">
-</head>
-  <body>
-    <section class="principal">
-    <div class="navbar-fixed x" >
-       <nav class="menu transparent " id="">
-         <div class="container nav-wrapper center ">
-           <a href="#home" class="left" id="brandLogo"><img class="responsive-img brand-logo " src="assets/img/nearsoftLogo.svg" alt=""></a>
-           <a href="#" data-activates="hamburguer" class="button-collapse brand-logo hide-on-med-and-down  left hamburguesa "><img class="responsive-img logo " src="assets/img/nearsoftLogo.svg" alt=""></a>
-           <ul class=" hide-on-med-and-down col s9 right">
-             <li class=""><a href="" class="texto-purpura"> Mi agenda </a></li>
-             <li ><a class='dropdown-button texto-purpura' data-activates="dropdownPort">Nearsoft</a></li>
-           </ul>
-         </div>
-      </nav>
-     </div>
-      <section class="row">
-        <div class="container-fluid">
-          <div class="videoHero col s12">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>October Talks - Nearsoft</title>
+		<link rel="stylesheet" href="src/css/materialize.min.css">
+		<link rel="stylesheet" href="src/css/main.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	</head>
+	<body>
 
-          </div>
-        </div>
-      </section>
-      <section class="row">
-        <div class="col s12 contenedorSeccionEvento">
-          <div class="col s6  seccionRedirect teal"></div>
-          <div class="col s6 seccionRedirect teal"></div>
-        </div>
-        <div class="col s12">
-          <div class="col s6 center"><h3 class="flow-text">Conferencias.</h3></div>
-          <div class="col s6 center"><h3 class="flow-text">Talleres.</h3></div>
-        </div>
-      </section>
-     <section class="row">
-       <div class="row contenedorSeccionEvento">
-         <div class="col s7  contenedorMapa">
 
-         </div>
-         <div class="col s5 contacto">
-           <address class="">
-             Mexico City:
-             San Luis Potosí 196 int. 401
-             Col. Roma Norte
-             Del. Cuauhtémoc
-             Mexico, D.F. 06700
-             +52 (55) 6388-6650
-           </address>
-         </div>
-       </div>
-     </section>
-     <footer>
-         <p class="center flow-text"> Copyright DoryCompany 2017</p>
-     </footer>
-    </section>
+		<!--
+<nav>
+<div class=" nav-wrapper center ">
+<a href="#home" id="brandLogo"><img class="responsive-img left brand-logo " src="assets/img/nearsoftLogo.svg" alt="nearsoft"></a>
+<a href="#" data-activates="hamburguer" class="button-collapse brand-logo hide-on-med-and-down  left hamburguesa "><img class="responsive-img logo " src="assets/img/nearsoftLogo.svg" alt=""></a>
+<ul class=" hide-on-med-and-down col s9 right">
+<li class=""><a href="" class="texto-purpura"> Mi agenda </a></li>
+<li ><a class='dropdown-button texto-purpura' data-activates="dropdownPort">Nearsoft</a></li>
+</ul>
+</div>
+</nav>
+-->
+		<nav>
+			<div class="nav-wrapper">
+				<a href="#!" class="brand-logo"><img class="left" width="150px" height="70px" src="assets/img/nearsoftLogo.svg" alt="nearsoft"></a>
+				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons texto-purpura">menu</i></a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="src/views/miagenda.html" class=“btn btn_agenda texto-purpura color-btn-miagenda right”>Mi Agenda</a></li>
 
-     <!-- Compiled and minified JavaScript -->
-     <script src="https://code.jquery.com/jquery-3.2.1.min.js"</script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
-  </body>
+
+				</ul>
+				<ul class="side-nav" id="mobile-demo">
+					<li><a href="src/views/miagenda.html" class=“btn btn_agenda texto-purpura color-btn-miagenda right”>Mi agenda</a></li>
+					<li><a href="src/views/conferencias.html" class=“btn btn_agenda texto-purpura color-btn-miagenda right”>Conferencias</a></li>
+					<li><a href="src/views/talleres.html" class=“btn btn_agenda texto-purpura color-btn-miagenda right”>Talleres</a></li>
+
+				</ul>
+			</div>
+		</nav>
+
+
+		<video autoplay loop controls muted class="responsive-video" controls>
+			<source src="assets/img/Oktober%20Talks.mp4" type="video/mp4">
+		</video>
+
+		<section class="container margin-top">
+			<div class="row ">
+				<div class="col s12 m12">
+					<div class="row">
+						<a href="src/views/conferencias.html"><img class="center col s8 offset-s2 m4 offset-m1 z-depth-3" src="assets/img/conferencia.svg"></a>
+						<div class="col m1"></div>
+						<a href="src/views/talleres.html"><img class="center col s8 offset-s2 m4 z-depth-3" src="assets/img/taller.svg"></a>
+					</div>
+
+				</div>
+
+			</div>
+			<div class="row center contenedorSeccionEvento">
+
+				<iframe class="col s12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.98558747682!2d-99.16668018509364!3d19.413028686895522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff3edb73f817%3A0xdbe8ff9cb7735321!2sSan+Luis+Potos%C3%AD+196%2C+Roma+Nte.%2C+06700+Ciudad+de+M%C3%A9xico%2C+CDMX!5e0!3m2!1ses!2smx!4v1502862767231" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+			</div>
+			<div class="row">
+				<address class="col s12 contacto">
+					Mexico City:
+					San Luis Potosí 196 int. 401
+					Col. Roma Norte
+					Del. Cuauhtémoc
+					Mexico, D.F. 06700
+					+52 (55) 6388-6650
+				</address>
+			</div>
+		</section>
+
+		<footer>
+			<div class="container">
+				<div class="row">
+					<p class="col s6 m6  pading"> Copyright DoryCompany 2017</p>
+					<div class="col s6 m6 right-align">
+						<i class="fa fa-facebook fa-2x pading" aria-hidden="true"></i>
+						<i class="fa fa-twitter fa-2x pading" aria-hidden="true"></i>
+					</div>
+				</div>
+
+			</div>
+		</footer>
+
+
+		<!-- Compiled and minified JavaScript -->
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+		<script src="https://use.fontawesome.com/a52b638e62.js"></script>
+		<script src="src/js/app.js"></script>
+	</body>
 </html>
