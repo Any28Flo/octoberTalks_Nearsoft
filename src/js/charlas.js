@@ -21,7 +21,7 @@ var plantillaTalleres = `
     </div>
   </section>`;
 var contador = 0;
-var arregloTalleresAgregados = [];
+var arregloEventosAgregados = [];
 function ObtenerDatos(respuesta){
   contador++;
    var horaInicio = Object.getOwnPropertyDescriptor(respuesta, "Hora Inicio").value;
@@ -112,10 +112,10 @@ function check (e){
   console.log(e.target);
   	$(e.target).text('check');
   var datas = (JSON.parse(localStorage.dataEvento));
-  arregloTalleresAgregados.push(datas);
+  arregloEventosAgregados.push(datas);
   $(e.target).parent().addClass('disabled');
-  console.log(arregloTalleresAgregados);
-  localStorage.setItem('arregloEventosAgregados',JSON.stringify(arregloTalleresAgregados));
+  console.log(arregloEventosAgregados);
+  localStorage.setItem('arregloEventosAgregados',JSON.stringify(arregloEventosAgregados));
 
 	// tipo = 'check';
 
