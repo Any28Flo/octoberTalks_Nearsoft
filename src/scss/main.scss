@@ -34,6 +34,14 @@ nav{
     color: whi$grisClaro;
   }
 }
+.color-btn-miagenda{
+  background-color: $purpuraMedio;
+
+  &:hover{
+    color: $purpuraMedio;
+    background-color: white;
+  }
+}
 
 .contenedorSeccionEvento{
   @include flexRowSpaceBetween;
@@ -55,4 +63,3 @@ footer{
   background-color: #1a1a1a;
   margin:0;
 }
-
