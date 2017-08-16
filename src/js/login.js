@@ -18,6 +18,7 @@ var config = {
 		  localStorage.setItem('user', user.displayName);
 		  localStorage.setItem('email', user.email);
 		  location.href="../../index.html";
+		  //console.log(localStorage)
 
 		}).catch(function(error) {
 		  var errorMessage = error.message;
