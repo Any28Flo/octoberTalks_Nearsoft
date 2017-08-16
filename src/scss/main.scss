@@ -35,6 +35,14 @@ nav{
     color: whi$grisClaro;
   }
 }
+.color-btn-miagenda{
+  background-color: $purpuraMedio;
+
+  &:hover{
+    color: $purpuraMedio;
+    background-color: white;
+  }
+}
 
 .contenedorSeccionEvento{
   @include flexRowSpaceBetween;
