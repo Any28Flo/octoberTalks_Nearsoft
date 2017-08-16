@@ -1,3 +1,19 @@
+video {
+  min-width: 100%;
+  width: auto;
+  z-index: -100; }
+
+.margin-top {
+  margin-top: 5%; }
+
+footer {
+  height: 100px;
+  color: white;
+  background-color: #1a1a1a; }
+
+.pading {
+  padding: 8%; }
+
 nav {
   background: #FFF;
   box-shadow: none; }
@@ -18,18 +34,6 @@ nav {
 .chip_lugar {
   background-color: #FF5300;
   color: white; }
-
-video {
-  min-width: 100%;
-  width: auto;
-  z-index: -100; }
-
-.margin-top {
-  margin-top: 5%; }
-
-
-.pading {
-  padding: 8%; }
 
 body {
   box-sizing: border-box;
@@ -74,7 +78,6 @@ div.seccionRedirect {
   background-color: #1a1a1a;
   height: 30vh; }
 
-
 .icono i {
   color: #3d122a; }
 
@@ -82,5 +85,15 @@ footer {
   height: 5vh;
   background-color: #1a1a1a;
   margin: 0; }
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.btn-inicio {
+  margin-top: 10%;
+  font-size: 2rem; }
 
 /*# sourceMappingURL=main.css.map */
