@@ -19,6 +19,11 @@ var plantillaTalleres = `
   </section>`;
 
 
+var muestraNombreUsuario = function(){
+  var usuarioNombre = localStorage.getItem('user');
+  console.log(usuarioNombre)
+  $("#usuario").text(usuarioNombre);
+}
 
 
 var muestraDatos = function(){
@@ -86,6 +91,7 @@ var muestraTalleres = function(){
 
 
 $(document).ready(function(){
+  muestraNombreUsuario();
   muestraDatos();
   muestraTalleres();
 });
