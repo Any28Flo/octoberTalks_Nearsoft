@@ -86,6 +86,7 @@ var muestraTalleres = function(){
 
 
 $(document).ready(function(){
+  $(".button-collapse").sideNav();
   muestraDatos();
   muestraTalleres();
 });
