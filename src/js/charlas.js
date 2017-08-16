@@ -121,7 +121,8 @@ function check (e){
 
 }
 $(document).ready(function(){
-    $('.modal').modal()
+    $('.modal').modal();
+    $('.button-collapse').sideNav();
     $(document).on('click','.mas',mostrarModal);
     $(document).on('click','#btn-agregar',check);
     crearTarjetas(rutas.urlApi);

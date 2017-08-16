@@ -5,30 +5,62 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Talleres</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+    <link rel="stylesheet" href="../css/materialize.min.css">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link rel="stylesheet" href="../css/main.css">
 
 </head>
 <body>
-	<nav class=".nav">
-		<img src="../assets/img/oktoberTalksLogo.jpg" alt="oktober-logo" class="logo">
-		<a href="miagenda.html"class="btn btn_agenda  color-btn-miagenda right">Mi Agenda</a>
-	</nav>
-	<h3 class="center titulo">Talleres</h3>
 
-	<section class="container" id="contenedorCharlas">
+			<nav class="navTam navpurpura">
+				<div class="nav-wrapper navpurpura">
+					<a href="../../index.html" class="brand-logo"><img class="left responsive-img logoSeccion"  src="../../assets/img/oktobertalks-03.png" alt="nearsoft"></a>
+					<a href="#" data-activates="mobile-demo-talleres" class="button-collapse"><i class="material-icons white-text">menu</i></a>
+					<ul id="nav-mobile" class="right hide-on-med-and-down">
+						<li><a href="./miagenda.html"class="btn-large btn_agenda  color-btn-miagenda right">Mi Agenda</a></li>
+						<li><a href="./charlas.html" class='btn btn_agenda btn-large color-btn-miagenda right'>Pláticas</a></li>
 
-	</section>
+					</ul>
+					<ul class="side-nav" id="mobile-demo-talleres">
+						<li><a href="./miagenda.html" class='btn btn_agenda texto-purpura color-btn-miagenda '>Mi agenda</a></li>
+						<li><a href="./charlas.html" class='btn btn_agenda texto-purpura color-btn-miagenda '>Pláticas</a></li>
+						<li><a href="./talleres.html" class='btn btn_agenda texto-purpura color-btn-miagenda '>Talleres</a></li>
+					</ul>
+				</div>
+			</nav>
 
-	<div id="infoEvento" class="modal">
-    <!-- <div class="modal-content">
-
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-    </div> -->
+<!-- <div class="">
+	<div class="navbar-fixed ">
+    <nav class="row navTam">
+      <div class="nav-wrapper navpurpura col s12">
+        <a href="#!" class="center"><img src="../../assets/img/oktobertalks-03.png" class="brand-logo" alt=""></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="sass.html">Sass</a></li>
+          <li><a href="badges.html">Components</a></li>
+        </ul>
+      </div>
+    </nav>
   </div>
+</div> -->
+
+
+	<div class="container">
+		<h3 class="center titulo">Talleres</h3>
+
+		<section class="container" id="contenedorCharlas">
+
+		</section>
+
+		<div id="infoEvento" class="modal">
+	    <!-- <div class="modal-content">
+
+	    </div>
+	    <div class="modal-footer">
+	      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+	    </div> -->
+	  </div>
+	</div>
+
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
 	<script type="text/javascript" src="../js/talleres.js">

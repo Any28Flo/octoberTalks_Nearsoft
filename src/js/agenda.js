@@ -91,7 +91,10 @@ var muestraTalleres = function(){
 
 
 $(document).ready(function(){
+
+  $(".button-collapse").sideNav();
   muestraNombreUsuario();
+
   muestraDatos();
   muestraTalleres();
 });
