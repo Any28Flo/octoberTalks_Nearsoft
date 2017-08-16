@@ -5,7 +5,6 @@ nav {
     width: 25%;
     margin: 2%; }
   nav .btn_agenda {
-    background: #FF5300;
     margin: 2%; }
 
 .mas {
@@ -13,6 +12,13 @@ nav {
 
 .titulo {
   margin-top: 6%; }
+
+.chip_tipo {
+  background-color: #2c0c1c;
+  color: white; }
+.chip_lugar {
+  background-color: #FF5300;
+  color: white; }
 
 body {
   box-sizing: border-box;
@@ -34,6 +40,12 @@ nav .brand-logo {
 nav .btnMiAgenda {
   background-color: #5b1d3d;
   color: whi #c0bfc1; }
+
+.color-btn-miagenda {
+  background-color: #3d122a; }
+  .color-btn-miagenda:hover {
+    color: #3d122a;
+    background-color: white; }
 
 .contenedorSeccionEvento {
   display: flex;

@@ -7,7 +7,7 @@ nav{
 		margin: 2%;
 	}
 	.btn_agenda{
-		background: $naranja;
+
 		margin: 2%;
 	}
 }
@@ -15,7 +15,16 @@ nav{
 	color: $naranja;
 }
 
-
 .titulo{
 	margin-top: 6%;
+}
+.chip{
+	&_tipo{
+		background-color: $purpuraOscuro;
+		color: white;
+	}
+	&_lugar{
+		background-color: $naranja;
+		color: white;
+	}
 }

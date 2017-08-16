@@ -55,7 +55,7 @@ function crearTarjetas (url){
     $.getJSON(url,function (response) {
     		console.log(response);
         response.forEach(function(respuesta){
-          if(respuesta.Tipo == "Taller"){
+          if(respuesta.Tipo == "Platica"){
             ObtenerDatos(respuesta);
           }
 
