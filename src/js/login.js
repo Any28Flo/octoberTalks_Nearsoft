@@ -12,10 +12,13 @@ var config = {
   var loginGoogle = function(){
 	var provider = new firebase.auth.GoogleAuthProvider();
 	firebase.auth().signInWithPopup(provider).then(function(result) {
+			console.log(result)
 		  var token = result.credential.accessToken;
 		  var user = result.user;
 		  localStorage.setItem('user', user.displayName);
 		  localStorage.setItem('email', user.email);
+		  location.href="../../index.html";
+		  //console.log(localStorage)
 
 		}).catch(function(error) {
 		  var errorMessage = error.message;
