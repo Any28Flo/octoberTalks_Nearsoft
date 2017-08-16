@@ -21,7 +21,6 @@ var plantillaTalleres = `
     </div>
   </section>`;
 var contador = 0;
-var arregloEventosAgregados = [];
 function ObtenerDatos(respuesta){
   contador++;
    var horaInicio = Object.getOwnPropertyDescriptor(respuesta, "Hora Inicio").value;
@@ -111,11 +110,33 @@ function check (e){
 	// console.log(agregarEv.textContent);
   console.log(e.target);
   	$(e.target).text('check');
+
   var datas = (JSON.parse(localStorage.dataEvento));
-  arregloEventosAgregados.push(datas);
-  $(e.target).parent().addClass('disabled');
-  console.log(arregloEventosAgregados);
-  localStorage.setItem('arregloEventosAgregados',JSON.stringify(arregloEventosAgregados));
+  var arregloEventosAgregados = (JSON.parse(localStorage.arregloEventosAgregados));
+  // prueba = arreg.map(function(evento){
+  //       return {horaInicial: evento.hrFinal, horaFinal: evento.hrFinal};
+  //   });
+  // console.log(prueba);
+  // console.log(arregloEventosAgregados);
+  //  if(arregloEventosAgregados.length === 0){
+  //    arregloEventosAgregados.push(datas);
+  //  }else{
+  //    prueba = arregloEventosAgregados.map(function(evento){
+  //          return {horaInicial: evento.hrinicial, horaFinal: evento.hrfinal};
+  //      });
+  //  }
+  //    console.log(prueba);
+  //  }else {
+  //   var hrfinalNuevo = datas.hrfinal;
+  //   prueba = arregloEventosAgregados.forEach(function(evento){
+  //       return(evento);
+  //   });
+  // }
+  // console.log(prueba);
+  // convertirHoraMilisegundos(datas);
+    arregloEventosAgregados.push(datas);
+   $(e.target).parent().addClass('disabled');
+   localStorage.setItem('arregloEventosAgregados',JSON.stringify(arregloEventosAgregados));
 
 	// tipo = 'check';
 

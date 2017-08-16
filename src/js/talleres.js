@@ -13,7 +13,7 @@ var plantillaTalleres = `
           <div class="row" data-id= _evento_>
             <p class="center tag col s4 chip">_Lugar_</p>
             <p class="center tag col s4 chip">_Tipo_</p>
-            <a href="#infoEvento" class="center col s4 mas modal-trigger" data-descripcion='_descripcion_' data-titulo='data_Titulo_Evento' data-horario='data_horario_' data-duracion='data_duracion' data-lugar='data_lugar' data-tipo='data_tipo'> Ver Más </a>
+            <a href="#infoEvento" class="center col s4 mas modal-trigger" data-descripcion='_descripcion_' data-titulo='data_Titulo_Evento' data-horario='data_horario_' data-duracion='data_duracion' data-lugar='data_lugar' data-tipo='data_tipo' data-hrfinal='_horaFinal_' data-hrinicial='_horaInicial_'> Ver Más </a>
           </div>
         </div>
       </div>
@@ -21,7 +21,7 @@ var plantillaTalleres = `
     </div>
   </section>`;
 var contador = 0;
-var arregloTalleresAgregados = [];
+// var arregloTalleresAgregados = [];
 function ObtenerDatos(respuesta){
   contador++;
    var horaInicio = Object.getOwnPropertyDescriptor(respuesta, "Hora Inicio").value;
@@ -33,6 +33,10 @@ function ObtenerDatos(respuesta){
    var tipo=respuesta.Tipo;
    respuesta.idEvento = contador;
    var idEvento=respuesta.idEvento;
+   var horaFinal=convertirHoraMilisegundos(horaInicio,duracion);
+   var horaInicial = convertirHoraMilisegundos(horaInicio,0);
+   console.log(horaFinal);
+
    var plantillaNueva = "";
        plantillaNueva += plantillaTalleres.replace('_horario_',horaInicio)
        .replace('Titulo_Evento',titulo)
@@ -45,6 +49,8 @@ function ObtenerDatos(respuesta){
        .replace('data_duracion',duracion)
        .replace('data_lugar',lugar)
        .replace('data_tipo',tipo)
+       .replace('_horaFinal_',horaFinal)
+       .replace('_horaInicial_',horaInicial)
        .replace('_descripcion_',descripcion);
       $('#contenedorCharlas').append(plantillaNueva);
 
@@ -105,16 +111,56 @@ function copiarDatasEnBotonAgregar (setDatas){
   console.log(localStorage.dataEvento);
 
 }
+function convertirHoraMilisegundos (horaInicial,duracion){
+    var dia = 22;
+    var mes = 10;
+    var year = 2017;
+    var horaInicial = horaInicial.split(':');
+    console.log(horaInicial);
+    var minutos = parseInt(horaInicial[1]);
+    var hora = parseInt(horaInicial[0]);
+    var duracion = parseInt(duracion) * 60000;
+    console.log(duracion);
+    horaInicial = new Date(year,mes,dia,hora,minutos,0,0);
+    var horaFinal= new Date()
+    horaFinal.setTime(horaInicial.getTime()+ duracion);
+    return(horaFinal.getTime());
+
+}
+var prueba = [];
 
 function check (e){
   //*******************Función Agendar Evento***************
 	// console.log(agregarEv.textContent);
   console.log(e.target);
   	$(e.target).text('check');
+
   var datas = (JSON.parse(localStorage.dataEvento));
-  arregloTalleresAgregados.push(datas);
-  $(e.target).parent().addClass('disabled');
-  localStorage.setItem('arregloTalleresAgregados',JSON.stringify(arregloTalleresAgregados));
+  var arregloTalleresAgregados = (JSON.parse(localStorage.arregloTalleresAgregados));
+  // prueba = arreg.map(function(evento){
+  //       return {horaInicial: evento.hrFinal, horaFinal: evento.hrFinal};
+  //   });
+  // console.log(prueba);
+  // console.log(arregloTalleresAgregados);
+  //  if(arregloTalleresAgregados.length === 0){
+  //    arregloTalleresAgregados.push(datas);
+  //  }else{
+  //    prueba = arregloTalleresAgregados.map(function(evento){
+  //          return {horaInicial: evento.hrinicial, horaFinal: evento.hrfinal};
+  //      });
+  //  }
+  //    console.log(prueba);
+  //  }else {
+  //   var hrfinalNuevo = datas.hrfinal;
+  //   prueba = arregloTalleresAgregados.forEach(function(evento){
+  //       return(evento);
+  //   });
+  // }
+  // console.log(prueba);
+  // convertirHoraMilisegundos(datas);
+    arregloTalleresAgregados.push(datas);
+   $(e.target).parent().addClass('disabled');
+   localStorage.setItem('arregloTalleresAgregados',JSON.stringify(arregloTalleresAgregados));
 
 	// tipo = 'check';
 

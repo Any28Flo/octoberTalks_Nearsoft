@@ -58,9 +58,11 @@ var muestraDatos = function(){
 }
 
 
+
 var muestraTalleres = function(){
 
   var elementos = localStorage.arregloTalleresAgregados;
+  console.log(elementos)
  var elementojson= JSON.parse(elementos);
  if(elementojson.length === 0 ){
    alert("no hay elementos");
