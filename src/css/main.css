@@ -52,6 +52,9 @@ div.seccionRedirect {
   background-color: #1a1a1a;
   height: 30vh; }
 
+.icono i {
+  color: #3d122a; }
+
 footer {
   height: 5vh;
   background-color: #1a1a1a;
