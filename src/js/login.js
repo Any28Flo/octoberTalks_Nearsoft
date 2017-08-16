@@ -14,10 +14,9 @@ var config = {
 	firebase.auth().signInWithPopup(provider).then(function(result) {
 		  var token = result.credential.accessToken;
 		  var user = result.user;
-		  console.log(user);
-		  console.log(user.displayName)
-		  console.log(user.email)
-		//  localStorage.setItem('user', user.displayName);
+		  localStorage.setItem('user', user.displayName);
+		  localStorage.setItem('email', user.email);
+
 		}).catch(function(error) {
 		  var errorMessage = error.message;
 		  console.log("error",errorMessage);
