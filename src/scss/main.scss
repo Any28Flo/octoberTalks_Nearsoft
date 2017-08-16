@@ -1,7 +1,9 @@
-@import 'variables';
-@import 'charla';
 @import 'colores' ;
+
 @import 'index' ;
+
+@import 'charla';
+
 
 
 
@@ -17,6 +19,7 @@ body{
   padding: 0;
   margin: 0;
 }
+
 .principal{
   height: 100vh;
 }
@@ -36,6 +39,14 @@ nav{
     color: whi$grisClaro;
   }
 }
+.color-btn-miagenda{
+  background-color: $purpuraMedio;
+
+  &:hover{
+    color: $purpuraMedio;
+    background-color: white;
+  }
+}
 
 .contenedorSeccionEvento{
   @include flexRowSpaceBetween;
@@ -51,5 +62,16 @@ div.seccionRedirect{
   background-color: #1a1a1a;
   height: 30vh;
 }
+.icono{
+  i{
+    color: #3d122a;
+  }
 
+
+}
+footer{
+  height: 5vh;
+  background-color: #1a1a1a;
+  margin:0;
+}
 

@@ -1,21 +1,26 @@
 nav{
 	background: #FFF;
 	box-shadow: none;
-
+}
 	.logo{
 		width: 25%;
 		margin: 2%;
 	}
-	.btn_agenda{
-		background: $naranja;
-		margin: 2%;
-	}
-}
-.mas{
+
+ .mas{
 	color: $naranja;
 }
 
-
 .titulo{
-	margin-top: 6%;
+	margin-top: 10%;
+}
+.chip{
+	&_tipo{
+		background-color: $purpuraOscuro;
+		color: white;
+	}
+	&_lugar{
+		background-color: $naranja;
+		color: white;
+	}
 }
