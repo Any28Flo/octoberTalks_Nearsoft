@@ -22,7 +22,7 @@ var usuarios     = firebase.database().ref("usuarios");
 var insertaUsuario = function(e){
 e.preventDefault();
 
-var nombre = localStorage.usuario;
+var nombre = localStorage.user;
 var email = localStorage.email;
 
 usuarios.set({
